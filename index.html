@@ -1,35 +1,26 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en-US">
 <head>
- <!-- Google Tag Manager -->
+<!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-N5LJ5D59');</script>
 <!-- End Google Tag Manager -->
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-T9XDXZ5688"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-T9XDXZ5688');
-</script>
 
   <!-- Meta -->
   <meta name="p:domain_verify" content="49258456fa888eb1fa72fc97c2a9183a">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
   <meta name="robots" content="index,follow">
-  <meta name="author" content="Maple Leaf Press">
+  <meta name="author" content="Wallid Guergour">
 
   <!-- SEO -->
-  <title>Maple Leaf Press — Documentation de soudage, outils et ressources industrielles</title>
-  <meta name="description" content="Documentation de soudage, guides techniques, ressources industrielles et outils pratiques pour soudeurs et ingénieurs — en accès libre.">
+  <title>Welding Engineer | Free Documentation, Tools & Industrial Resources</title>
+  <meta name="description" content="Access professional welding documentation, technical guides, and industrial automation tools for engineers and creators — all for free.">
   <!-- (Optional) concise keywords for Bing/Yandex -->
-  <meta name="keywords" content="soudage, métallurgie, DMOS, WPS, calcul d'apport de chaleur, TIG, MIG, FCAW, sécurité, automatisation industrielle, documentation">
+  <meta name="keywords" content="welding, metallurgy, WPS, heat input calculator, TIG, MIG, FCAW, safety, industrial automation, documentation">
 
   <!-- Canonical & hreflang -->
   <link rel="canonical" href="https://www.mapleleaf.press/">
@@ -37,65 +28,80 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="alternate" hreflang="fr" href="https://www.mapleleaf.press/fr/">
   <link rel="alternate" hreflang="x-default" href="https://www.mapleleaf.press/">
 
-<!-- Open Graph -->
-<meta property="og:type" content="website">
-<meta property="og:locale" content="fr_CA">
-<meta property="og:locale:alternate" content="fr_FR">
-<meta property="og:title" content="Maple Leaf Press — Documentation de soudage, outils et ressources industrielles">
-<meta property="og:description" content="Accédez à des guides techniques, de la documentation de soudage et des outils industriels — gratuitement.">
-<meta property="og:url" content="https://www.mapleleaf.press/">
-<meta property="og:image" content="https://www.mapleleaf.press/images/og/home-fr.webp">
+  <!-- CSS Video -->
+  <style>
+	.video-container {
+	  position: relative;
+	  padding-bottom: 56.25%; /* Ratio 16:9 */
+	  height: 0;
+	  overflow: hidden;
+	  max-width: 100%;
+	  border-radius: 10px; /* optionnel */
+	}
+	
+	.video-container iframe {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	}
+	</style>
 
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Maple Leaf Press — Documentation de soudage, outils et ressources industrielles">
-<meta name="twitter:description" content="Guides techniques, documentation et outils industriels pour le soudage.">
-<meta name="twitter:image" content="https://www.mapleleaf.press/images/og/home-fr.webp">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:title" content="Welding Engineer | Free Documentation, Tools & Industrial Resources">
+  <meta property="og:description" content="Welding Engineer blends code, design, and industrial know-how. Explore tools, creative projects, and engineering solutions that fuse art and precision.">
+  <meta property="og:url" content="https://www.mapleleaf.press/">
+  <meta property="og:image" content="https://www.mapleleaf.press/images/og/home-en.webp">
 
-<!-- JSON-LD: WebSite -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "Maple Leaf Press",
-  "url": "https://www.mapleleaf.press/",
-  "inLanguage": "fr",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://www.mapleleaf.press/?s={search_term_string}",
-    "query-input": "required name=search_term_string"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Maple Leaf Press",
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Welding Engineer | Free Documentation, Tools & Industrial Resources">
+  <meta name="twitter:description" content="Guides, tools and industrial resources for welding and fabrication.">
+  <meta name="twitter:image" content="https://www.mapleleaf.press/images/og/home-en.webp">
+
+  <!-- JSON-LD: WebSite + SearchAction -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Welding Engineer",
     "url": "https://www.mapleleaf.press/",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://www.mapleleaf.press/images/Logo.png"
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.mapleleaf.press/?s={search_term_string}",
+      "query-input": "required name=search_term_string"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Welding Engineer",
+      "url": "https://www.mapleleaf.press/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.mapleleaf.press/images/Logo.png"
+      }
     }
   }
-}
-</script>
+  </script>
 
-<!-- JSON-LD: WebPage -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.mapleleaf.press/" },
-  "headline": "Maple Leaf Press — Documentation de soudage, outils et ressources industrielles",
-  "description": "Documentation, guides et outils techniques dédiés au soudage et à l'industrie.",
-  "image": ["https://www.mapleleaf.press/images/Google/Schema/Index/Data.webp"],
-  "publisher": {
-    "@type": "Organization",
-    "name": "Maple Leaf Press",
-    "url": "https://www.mapleleaf.press/",
-    "logo": { "@type": "ImageObject", "url": "https://www.mapleleaf.press/images/Logo.png" }
-  },
-  "datePublished": "2025-07-13T00:00:00+00:00",
-  "dateModified": "2025-07-13T00:00:00+00:00"
-}
-</script>
+  <!-- JSON-LD: WebPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "mainEntityOfPage": {"@type":"WebPage","@id":"https://www.mapleleaf.press/"},
+    "headline": "Welding Engineer | Free Documentation, Tools & Industrial Resources",
+    "description": "Welding Engineer blends code, design, and industrial know-how.",
+    "image": ["https://www.mapleleaf.press/images/Google/Schema/Index/Data.webp"],
+    "author": {"@type":"Person","name":"Wallid Guergour","url":"https://www.mapleleaf.press/"},
+    "publisher": {"@type":"Organization","name":"Welding Engineer","url":"https://www.mapleleaf.press/","logo":{"@type":"ImageObject","url":"https://www.mapleleaf.press/images/Logo.png"}},
+    "datePublished": "2025-07-13T00:00:00+00:00",
+    "dateModified": "2025-07-13T00:00:00+00:00"
+  }
+  </script>
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
@@ -116,10 +122,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </head>
 
 <body class="home">
-  <!-- Google Tag Manager (noscript) -->
+<!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N5LJ5D59"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+<!-- End Google Tag Manager (noscript) -->id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N5LJ5D59');</script>
+<!-- End Google Tag Manager -->
 
 	<!-- Preloader -->
 	<div class="preloader">
@@ -169,6 +177,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div class="top-menu hover-masks">
 					<div class="top-menu-nav">	
 						<div class="menu-topmenu-container">
+							<ul class="menu">
+								<li class="menu-item">
+									<a href="#section-about">Presentation</a>
+									<a href="#section-blog">Nouveau Post</a>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -216,7 +230,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 			</div>
 
-			<div class="section about" id="section-blog">
+			<div class="section about" id="section-about">
 
                 
 
@@ -251,6 +265,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 				<div class="content content-box">
 					<div class="desc">
+
+						
+						  <!-- video -->
+<div class="video-container">
+	<iframe 
+	  width="560" 
+	  height="315" 
+	  src="https://youtu.be/va3bQGayBGM" 
+	  title="Vidéo YouTube - Soudure fil fourré FCAW" 
+	  frameborder="0" 
+	  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+	  allowfullscreen>
+	</iframe>
+  </div>
 					  
 					  <img src="images/Items/Guides-et-Documentations.svg" alt="Guides de soudure gratuits et documentation technique">
 				  
@@ -369,7 +397,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					  </h2>
 				  
 					  <p>
-						Je m’appelle <strong>????</strong>, je suis <strong>soudeur / chaudronnier</strong> 
+						Je m’appelle <strong>Marc</strong>, je suis <strong>soudeur / chaudronnier</strong> 
 						installé au Québec. Je travaille dans des secteurs exigeants comme le 
 						<strong>minier</strong>, le <strong>forestier</strong> ou l’aéronautique, 
 						avec des épaisseurs importantes et des contraintes réelles de production.
@@ -428,8 +456,168 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 
 			</div>
 
+			<div class="section blog" id="section-blog">
+				<div>
+				<div class="content content-box">
+					<div class="desc">
+					  
+					  <img src="images/Items/Blog.svg" alt="Blog sur la soudure et les livres Maple Leaf Press">
+				  
+					  <h2 class="title_inner">
+						Foire aux questions – <strong>Maple Leaf Press</strong>
+					  </h2>
 
+				  
+					  <h3 class="title_inner">Soudure Fil Fourré</h3>
+
+					  
+					  <p>
+						Si tu veux comprendre le fil fourré sans jargon inutile, j’ai rédigé un guide complet basé sur mon expérience terrain.
+						Tu y trouveras des réglages réalistes, des exemples concrets et des conseils simples pour améliorer instantanément la qualité de tes cordons.
+						Un article clair, gratuit, et pensé pour t’aider à progresser dès aujourd’hui.
+					  </p>
+					  <a href="https://weldingengineer.org/fr/guides/fcaw-fil-fourre/Bases.html" class="btn hover-animated">
+						<span class="circle"></span>
+						<span class="lnk">Comprendre la soudure au fil fourré</span>
+					</a>
+				  
+				  
+					</div>
+				  </div>
+			</div>
+			</div>
+
+
+			<div class="section works" id="section-portfolio">
+				<div class="content">
+
+					<!-- title -->
+					<div class="title">
+						<div class="title_inner">Réalisations</div>
+					</div>
+				
+					<!-- portfolio filter -->
+					<div class="filter-menu content-box">
+						<div class="filters">
+							<div class="btn-group">
+								<label data-text="All" class="glitch-effect"><input type="radio" name="fl_radio" value=".box-item" />Tous</label>
+							</div>
+							<div class="btn-group">
+								<label data-text="Chaudronnerie"><input type="radio" name="fl_radio" value=".f-Chaudronnerie" />Chaudronnerie</label>
+							</div>
+							<div class="btn-group">
+								<label data-text="Soudure"><input type="radio" name="fl_radio" value=".f-Soudure" />Soudure</label>
+							</div>
+							<div class="btn-group">
+								<label data-text="Blog"><input type="radio" name="fl_radio" value=".f-Blog" />Blog Post</label>
+							</div>
+							<div class="btn-group">
+								<label data-text="Dessins"><input type="radio" name="fl_radio" value=".f-Dessins" />Dessins</label>
+							</div>
+							<!-- <div class="btn-group">
+								<label data-text="Poster"><input type="radio" name="fl_radio" value=".f-Poster" />Poster</label>
+							</div> -->
+						</div>
+					</div>
+					
+					<!-- portfolio items -->
+					<div class="box-items portfolio-items">
+
+					
+
+					
+					<!-- Soudure de Barrage Hydro -->
+
+						<div class="box-item f-Soudure">
+							<div class="image">
+								<a href="#gallery-1" class="has-popup-gallery hover-animated">
+									<img src="images/Portfolio/Soudures/Barrage Hydro/Soudure-1.webp" class="wp-post-image" alt="Test pour soudure sur element de barrage hydro." />
+									<span class="info circle">
+										<span class="centrize full-width">
+											<span class="vertical-center">
+												<span class="icon fas fa-images"></span>
+												<span class="desc">
+													<span class="category">Gallerie</span>
+													<span class="name">Test de soudure pour une pièce de barrage hydro</span>
+												</span>
+											</span>
+										</span>
+									</span>
+								</a>
+								<div id="gallery-1" class="mfp-hide">
+									<a href="images/Portfolio/Soudures/Barrage Hydro/Soudure-1.webp"></a>
+									<a href="images/Portfolio/Soudures/Barrage Hydro/Soudure-2.webp"></a>
+									<a href="images/Portfolio/Soudures/Barrage Hydro/Details-de-soudure-multi-passes.webp"></a>
+								</div>	
+							</div>
+						</div>
+
+
+                    <!-- Fin Soudure de Barrage Hydro -->
+					
 			
+
+					<!-- Drawing portrait Fille aux fleurs-->
+
+					<div class="box-item f-Dessins">
+						<div class="image">
+							<a href="#gallery-3" class="has-popup-gallery hover-animated">
+								<img src="images/Portfolio/Dessins/Portraits/Fille aux fleurs/001.webp" class="wp-post-image" alt="Portrait with pencil" />
+								<span class="info circle">
+									<span class="centrize full-width">
+										<span class="vertical-center">
+											<span class="icon fas fa-images"></span>
+											<span class="desc">
+												<span class="category">Gallerie</span>
+												<span class="name">Portrait au criterium et au stylo, inspiré d'une jackette de Dj Okawari.</span>
+											</span>
+										</span>
+									</span>
+								</span>
+							</a>
+							<div id="gallery-3" class="mfp-hide">
+								<a href="images/Portfolio/Dessins/Portraits/Fille aux fleurs/001.webp"></a>
+								<a href="images/Portfolio/Dessins/Portraits/Fille aux fleurs/002.webp"></a>
+							</div>	
+						</div>
+					</div>
+					
+					<!-- Fin Drawing portrait Fille aux fleurs-->
+
+					<!-- Passage de porte -->
+
+				<div class="box-item f-Chaudronnerie">
+					<div class="image">
+						<a href="#gallery-8" class="has-popup-gallery hover-animated">
+							<img src="images/Portfolio/Chaudronnerie/Passage de porte/001.webp" class="wp-post-image" alt="Passage de porte" />
+							<span class="info circle">
+								<span class="centrize full-width">
+									<span class="vertical-center">
+										<span class="icon fas fa-images"></span>
+										<span class="desc">
+											<span class="category">Gallerie</span>
+											<span class="name">Passage de porte en alu.</span>
+										</span>
+									</span>
+								</span>
+							</span>
+						</a>
+						<div id="gallery-8" class="mfp-hide">
+							<a href="images/Portfolio/Chaudronnerie/Passage de porte/001.webp"></a>
+							<a href="images/Portfolio/Chaudronnerie/Passage de porte/002.webp"></a>
+							<a href="images/Portfolio/Chaudronnerie/Passage de porte/003.webp"></a>
+						</div>	
+					</div>
+				</div>
+
+			<!-- Passage de porte -->
+					
+
+					</div>
+
+					<div class="clear"></div>
+				</div>
+			</div>
 
 			
 
