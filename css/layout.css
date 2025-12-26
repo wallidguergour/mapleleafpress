@@ -4855,3 +4855,85 @@ iframe, object {
 	height: 100%;
 }
 
+/* Empêche le menu hover-masks de dupliquer le texte sur le CTA */
+.top-menu .menu a.menu-cta::before,
+.top-menu .menu a.menu-cta::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Sécurise l'empilement pour ton effet hover "circle" */
+.top-menu .menu a.menu-cta {
+  position: relative;
+  overflow: hidden;
+}
+
+.top-menu .menu a.menu-cta .lnk{
+  position: relative;
+  z-index: 2;
+}
+
+/* Menu visible uniquement dans le hero */
+.header.hero-only {
+	opacity: 1;
+	pointer-events: auto;
+	transform: translateY(0);
+	transition: opacity .25s ease, transform .25s ease;
+  }
+  
+  .header.hero-only.is-hidden {
+	opacity: 0;
+	pointer-events: none; /* évite les clics fantômes */
+	transform: translateY(-8px);
+  }
+
+  #backToTop{
+	position: fixed;
+	bottom: 24px;
+	right: 24px;
+  
+	width: 52px;
+	height: 52px;
+  
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  
+	border-radius: 50%;
+	border: 1px solid rgba(255,255,255,0.15);
+	background-color: #c62828; /* ton rouge Maple Leaf */
+	color: #fff;
+  
+	cursor: pointer;
+	z-index: 1000;
+  
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(6px);
+	transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
+  
+	box-shadow: 0 10px 22px rgba(0,0,0,0.45);
+  }
+  
+  #backToTop svg{
+	width: 22px;
+	height: 22px;
+  }
+  
+  #backToTop:hover{
+	transform: translateY(0);
+  }
+  
+  #backToTop.show{
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0);
+  }
+  
+  /* Accessibilité: évite l’animation si l’utilisateur la désactive */
+  @media (prefers-reduced-motion: reduce){
+	#backToTop{
+	  transition: none;
+	}
+  }
+  

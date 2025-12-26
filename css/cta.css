@@ -27,3 +27,23 @@
   .cta-button:hover {
 	background: #d35400;
   }
+
+  .menu-cta{
+	display:inline-block;
+	margin-top:6px;
+	padding:10px 14px;
+	border-radius:10px;
+	font-weight:700;
+	background:#c62828; /* adapte au rouge Maple */
+	color:#fff !important;
+	text-transform:none;
+	letter-spacing:0;
+  }
+  
+  .menu-cta:hover{
+	transform: translateY(-1px);
+	filter: brightness(1.05);
+  }
+
+
+  
