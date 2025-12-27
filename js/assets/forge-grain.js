@@ -1,35 +1,43 @@
-let grains = [];
+(() => {
+  const sketch = (p) => {
+    let cnv;
 
-function setup() {
-  const canvas = createCanvas(600, 300);
-  canvas.parent("p5-forge"); // IMPORTANT
-  
-  for (let i = 0; i < 140; i++) {
-    grains.push({
-      x: random(width),
-      y: random(height),
-      r: random(6, 12)
-    });
-  }
-}
+    p.setup = () => {
+      const mount = document.getElementById("p5-forge");
+      if (!mount) {
+        console.warn("[p5] #p5-forge introuvable");
+        return;
+      }
 
-function draw() {
-  background(15);
-  noStroke();
-  fill(255, 120, 0);
+      cnv = p.createCanvas(720, 260);
+      cnv.parent(mount);
 
-  let pressure = map(mouseX, 0, width, 0.6, 2.2);
+      p.noLoop();
+      p.redraw();
+    };
 
-  for (let g of grains) {
-    ellipse(
-      g.x,
-      g.y,
-      g.r * pressure,
-      g.r / pressure
-    );
-  }
+    p.draw = () => {
+      p.background(15);
+      p.noStroke();
 
-  fill(180);
-  textSize(12);
-  text("Pression de forge", 10, height - 10);
-}
+      // petit grain "forge" simple
+      for (let i = 0; i < 12000; i++) {
+        const x = p.random(p.width);
+        const y = p.random(p.height);
+        const a = p.random(8, 40);
+        p.fill(255, a);
+        p.rect(x, y, 1, 1);
+      }
+
+      // titre debug
+      p.fill(255);
+      p.textSize(14);
+      p.text("p5 OK — forge-grain.js", 12, 22);
+    };
+  };
+
+  // On attend que le DOM soit prêt
+  window.addEventListener("DOMContentLoaded", () => {
+    new p5(sketch);
+  });
+})();
