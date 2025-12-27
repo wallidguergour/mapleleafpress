@@ -4936,4 +4936,10 @@ iframe, object {
 	  transition: none;
 	}
   }
-  
+  .p5-wrapper {
+  margin: 2rem 0;
+  background: #111;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
