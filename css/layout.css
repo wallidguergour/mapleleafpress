@@ -4936,22 +4936,37 @@ iframe, object {
 	  transition: none;
 	}
   }
-  .p5-wrapper {
-  margin: 2rem 0;
-  background: #111;
-  padding: 1rem;
-  border-radius: 8px;
-}
-
-.p5-wrapper{
-  width: 100%;
-  max-width: 100%;
-}
-#p5-forge canvas{
-  display:block;
-  width:100% !important;
-  height:auto !important;
-  border-radius: 14px;
-}
-
-
+  .guide-card {
+	display: block;
+	padding: 1.5rem;
+	border: 1px solid rgba(255,255,255,0.08);
+	border-radius: 8px;
+	text-decoration: none;
+	color: inherit;
+	transition: border-color 0.2s ease, transform 0.2s ease;
+  }
+  
+  .guide-card:hover {
+	border-color: rgba(255,255,255,0.2);
+	transform: translateY(-2px);
+  }
+  
+  .guide-card h3 {
+	margin: 0 0 0.5rem;
+	font-size: 1.1rem;
+  }
+  
+  .guide-card p {
+	margin: 0;
+	font-size: 0.95rem;
+	line-height: 1.5;
+	opacity: 0.85;
+  }
+  
+  .card-meta {
+	display: inline-block;
+	margin-top: 0.75rem;
+	font-size: 0.8rem;
+	opacity: 0.6;
+  }
+  
