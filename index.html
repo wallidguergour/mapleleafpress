@@ -33,13 +33,13 @@
   <meta property="og:title" content="Maple Leaf Press | Guides gratuits, ressources &amp; formations en soudure">
   <meta property="og:description" content="Guides, ressources et documentation de soudure basés sur l’expérience terrain. Accès gratuit + livres et formations Maple Leaf Press.">
   <meta property="og:url" content="https://www.mapleleaf.press/">
-  <meta property="og:image" content="https://www.mapleleaf.press/images/og/home-fr.webp">
+  <meta property="og:image" content="https://www.mapleleaf.press/images/og/home.webp">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Maple Leaf Press | Guides gratuits, ressources &amp; formations en soudure">
   <meta name="twitter:description" content="Guides, ressources et documentation de soudure basés sur l’expérience terrain.">
-  <meta name="twitter:image" content="https://www.mapleleaf.press/images/og/home-fr.webp">
+  <meta name="twitter:image" content="https://www.mapleleaf.press/images/og/home.webp">
 
   <!-- JSON-LD: WebSite + SearchAction -->
   <script type="application/ld+json">
@@ -96,6 +96,7 @@
   <link rel="stylesheet" href="css/fontawesome.css">
   <link rel="stylesheet" href="css/brands.css">
   <link rel="stylesheet" href="css/solid.css">
+  <link rel="stylesheet" href="css/cta.css">
 
   <!-- Favicon -->
   <link rel="icon" href="https://www.mapleleaf.press/images/favicons/favicon.ico">
@@ -105,9 +106,7 @@
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N5LJ5D59"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-N5LJ5D59');</script>
-<!-- End Google Tag Manager -->
+<!-- End Google Tag Manager (noscript) -->
 
 	<!-- Preloader -->
 	<div class="preloader">
@@ -142,7 +141,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div id="app">
 					<img src="images/Items/Search.svg" width="100" alt="About me and my blog" class="">
 					<main>
-						<input type="text" v-model="query" placeholder="Search...">
+						<input type="text" v-model="query" placeholder="Rechercher un guide (FCAW, TIG, MIG, réglages…)">
 						<div id="results">
 							<div v-for="item in filteredResults" :key="item.url" class="result-item">
 								<h2><a :href="item.url">{{ item.title }}</a></h2>
@@ -159,9 +158,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<div class="menu-topmenu-container">
 							<ul class="menu">
 								<li class="menu-item">
-									<a href="#section-about">À propos</a>
-									<a href="#section-blog">Guides</a>
-								</li>
+									<a href="#section-about">Commencer</a>
+									<a href="#section-portfolio">Réalisation</a>
+									<a href="#section-auteur">À propos</a>
+									
+								  
+									<a href="https://www.mapleleaf.press/Collection.html" class="menu-cta">
+										<span class="lnk">Accéder aux guides</span>
+									  </a>
+								  </li>
 							</ul>
 						</div>
 					</div>
@@ -192,6 +197,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							</h1>
 							
 							
+							
 							<!--
 							<div class="h-subtitle typing-subtitle">
 								<p>Unlock the secrets of <strong>welding</strong> and <strong>industrial design</strong>.</p>
@@ -217,6 +223,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 				<div class="content content-box">
 					<div class="desc">
+
+						<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1150765308?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Maple Leaf Press, Soudure et Chaudronnerie. Passer votre CQPM | Titre Pro soudage en 2026"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
                         
 						<img src="images/Items/About.svg" alt="About me and my blog">
 
@@ -233,11 +241,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						  </p>
 					  
 						  <p>
-							L’objectif est simple : offrir un accès gratuit à un <strong>contenu de niveau professionnel</strong> 
-							pour celles et ceux qui veulent <strong>débuter la soudure</strong>, progresser plus vite ou préparer 
-							un projet de carrière sérieuse dans le domaine. Les ressources gratuites disponibles ici sont conçues 
-							pour être aussi utiles et concrètes que mes vidéos — mais avec le confort de l’écrit.
+							L’objectif est simple : offrir un accès gratuit à un 
+							<strong>contenu de niveau professionnel</strong>, directement applicable en atelier,
+							pour celles et ceux qui veulent <strong>débuter la soudure</strong>, 
+							progresser plus vite ou préparer un <strong>projet de carrière sérieux</strong> dans le domaine.
 						  </p>
+
+						  <p>
+							Les ressources gratuites disponibles ici sont conçues pour être aussi utiles et concrètes
+							que mes vidéos — mais avec le confort de l’écrit : 
+							<strong>structuré, consultable rapidement et exploitable sur le long terme</strong>.
+						  </p>
+						  <p class="menu-cta">
+							→ Commencer par les <a href="https://www.mapleleaf.press/Collection.html">guides gratuits</a>
+						  </p>
+						  
 					
 					</div>
 					
@@ -247,16 +265,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<div class="desc">
 
 						
-						  <!-- video -->
-<div class="video-container">
-  <iframe
-    src="https://www.youtube.com/embed/va3bQGayBGM"
-    title="Soudure fil fourré FCAW"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen>
-  </iframe>
-</div>
 					  
 					  <img src="images/Items/Guides-et-Documentations.svg" alt="Guides de soudure gratuits et documentation technique">
 				  
@@ -290,180 +298,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				  
 					</div>
 				  </div>
-				  
-
-				  <div class="content content-box">
-					<div class="desc">
-					  
-					  <img src="images/Items/Content.svg" alt="Ressources de soudure pour débutants et professionnels">
-				  
-					  <h2 class="title_inner">
-						Ce que vous allez trouver sur <strong>Maple Leaf Press</strong>
-					  </h2>
-				  
-					  <p>
-						Le site est pensé comme une petite <strong>bibliothèque de soudure</strong> pour les francophones. 
-						Chaque ressource a été écrite pour être directement utile, que vous soyez en formation, 
-						en reconversion ou déjà en poste.
-					  </p>
-				  
-					  <ul>
-						<li><strong>Guides pour débuter la soudure</strong> pas à pas ;</li>
-						<li>des explications techniques inspirées de l’atelier, pas d’un bureau ;</li>
-						<li>des pistes pour construire une <strong>carrière de soudeur</strong> solide ;</li>
-						<li>des ponts entre le contenu YouTube et le contenu écrit ;</li>
-						<li>et, pour aller plus loin, des <strong>livres complets</strong> publiés sur Amazon.</li>
-					  </ul>
-				  
-					  <p>
-						Que vous découvriez la soudure aujourd’hui ou que vous ayez déjà plusieurs années d’expérience, 
-						l’objectif est que vous repartiez d’ici avec des idées concrètes à mettre en pratique.
-					  </p>
-				  
-					</div>
-				  </div>
-				  
-
-				<!--<div class="content content-box">
-					<div class="desc">
-					  
-					  <img src="images/Items/Books.svg" alt="Livres de soudure disponibles sur Amazon">
-				  
-					  <h2 class="title_inner">
-						Des <strong>livres de soudure</strong> pour aller encore plus loin
-					  </h2>
-				  
-					  <p>
-						En plus du contenu gratuit, je publie des <strong>livres de soudure</strong> pensés comme de 
-						véritables parcours structurés. Ils approfondissent les sujets abordés sur le site et sur YouTube, 
-						avec plus de détails, d’exemples et de méthode.
-					  </p>
-				  
-					  <p>
-						Ces livres sont disponibles sur <strong>Amazon</strong> et s’adressent par exemple à :
-					  </p>
-				  
-					  <ul>
-						<li>ceux qui veulent une vision complète pour <strong>débuter la soudure proprement</strong> ;</li>
-						<li>ceux qui réfléchissent à <strong>devenir soudeur indépendant</strong> ;</li>
-						<li>ceux qui s’intéressent à la <strong>carrière à l’étranger</strong> dans le domaine de la soudure.</li>
-					  </ul>
-				  
-					  <p>
-						Le principe est simple : tout ce qui est <strong>essentiel pour comprendre</strong> est disponible gratuitement 
-						sur le site, et les livres offrent une version plus approfondie, structurée comme une formation complète.
-					  </p>
-				  
-					  Bouton optionnel vers la boutique Amazon -->
-					  <!--
-					  <a href="TON_LIEN_AMAZON" class="btn hover-animated">
-						<span class="circle"></span>
-						<span class="lnk">Découvrir les livres sur Amazon →</span>
-					  </a>
-					
-				  
-					</div>
-				  </div>-->
-				  
-				  <div class="content content-box">
-					<div class="desc">
-					  
-					  <img src="images/Items/Author.svg" alt="Auteur de Maple Leaf Press, soudeur au Québec">
-				  
-					  <h2 class="title_inner">
-						Qui se cache derrière <strong>Maple Leaf Press</strong> ?
-					  </h2>
-				  
-					  <p>
-						Je m’appelle <strong>Marc</strong>, je suis <strong>soudeur / chaudronnier</strong> 
-						installé au Québec. Je travaille dans des secteurs exigeants comme le 
-						<strong>minier</strong>, le <strong>forestier</strong> ou l’aéronautique, 
-						avec des épaisseurs importantes et des contraintes réelles de production.
-					  </p>
-				  
-					  <p>
-						À travers <strong>Maple Leaf Press</strong> et ma chaîne YouTube 
-						<strong>Maple Leaf Soudure &amp; Chaudronnerie</strong>, je partage simplement ce que j’aurais aimé 
-						trouver au début : des explications claires, honnêtes, basées sur l’expérience terrain. 
-						Pas de promesses irréalistes, pas de “hype”, juste un chemin sérieux pour progresser dans le métier.
-					  </p>
-				  
-					</div>
-				  </div>
-
-				  <div class="content content-box">
-					<div class="desc">
-					  
-					  <img src="images/Items/FAQ.svg" alt="FAQ sur la soudure et les livres Maple Leaf Press">
-				  
-					  <h2 class="title_inner">
-						Foire aux questions – <strong>Maple Leaf Press</strong>
-					  </h2>
-				  
-					  <h3 class="title_inner">Est-ce que le contenu du site est vraiment gratuit&nbsp;?</h3>
-					  <p>
-						Oui. Les guides et articles disponibles sur <strong>Maple Leaf Press</strong> sont accessibles gratuitement. 
-						Ils sont conçus pour vous aider à comprendre la <strong>soudure</strong> et le métier de <strong>soudeur</strong> 
-						sans devoir sortir la carte bancaire.
-					  </p>
-				  
-					  <h3 class="title_inner">À quoi servent alors les livres disponibles sur Amazon&nbsp;?</h3>
-					  <p>
-						Les livres vont plus loin : ils proposent une approche <strong>structurée</strong>, avec un plan complet, 
-						des chapitres organisés, des exemples détaillés et une vision d’ensemble que l’on ne peut pas toujours 
-						offrir dans un simple article. C’est la version “long format” de ce que je partage ici et sur YouTube.
-					  </p>
-				  
-					  <h3 class="title_inner">Est-ce adapté si je débute complètement la soudure&nbsp;?</h3>
-					  <p>
-						Oui. Une partie du contenu est spécialement écrite pour <strong>débuter la soudure</strong> 
-						sans brûler les étapes, en expliquant le vocabulaire, le matériel et les bonnes pratiques.
-					  </p>
-				  
-					  <h3 class="title_inner">Dois-je acheter un livre pour apprendre&nbsp;?</h3>
-					  <p>
-						Non. Vous pouvez déjà apprendre beaucoup de choses avec le contenu gratuit. 
-						Les livres s’adressent à ceux qui veulent une ressource plus complète, à garder sur le long terme 
-						ou à utiliser comme support de travail.
-					  </p>
-				  
-					</div>
-				  </div>
-				  
-				  
+		  
                 
 			</div>
 
-			<div class="section blog" id="section-blog">
-				<div>
-				<div class="content content-box">
-					<div class="desc">
-					  
-					  <img src="images/Items/Blog.svg" alt="Blog sur la soudure et les livres Maple Leaf Press">
-				  
-					  <h2 class="title_inner">
-						Foire aux questions – <strong>Maple Leaf Press</strong>
-					  </h2>
-
-				  
-					  <h3 class="title_inner">Soudure Fil Fourré</h3>
-
-					  
-					  <p>
-						Si tu veux comprendre le fil fourré sans jargon inutile, j’ai rédigé un guide complet basé sur mon expérience terrain.
-						Tu y trouveras des réglages réalistes, des exemples concrets et des conseils simples pour améliorer instantanément la qualité de tes cordons.
-						Un article clair, gratuit, et pensé pour t’aider à progresser dès aujourd’hui.
-					  </p>
-					  <a href="https://weldingengineer.org/fr/guides/fcaw-fil-fourre/Bases.html" class="btn hover-animated">
-						<span class="circle"></span>
-						<span class="lnk">Comprendre la soudure au fil fourré</span>
-					</a>
-				  
-				  
-					</div>
-				  </div>
-			</div>
-			</div>
+		
 
 
 			<div class="section works" id="section-portfolio">
@@ -535,32 +374,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					
 			
 
-					<!-- Drawing portrait Fille aux fleurs-->
+					<!-- Convoyeur Minier -->
 
-					<div class="box-item f-Dessins">
+					<div class="box-item f-Chaudronnerie">
 						<div class="image">
 							<a href="#gallery-3" class="has-popup-gallery hover-animated">
-								<img src="images/Portfolio/Dessins/Portraits/Fille aux fleurs/001.webp" class="wp-post-image" alt="Portrait with pencil" />
+								<img src="images/Portfolio/Chaudronnerie/Convoyeurs/001-mines.webp" class="wp-post-image" alt="Portrait with pencil" />
 								<span class="info circle">
 									<span class="centrize full-width">
 										<span class="vertical-center">
 											<span class="icon fas fa-images"></span>
 											<span class="desc">
 												<span class="category">Gallerie</span>
-												<span class="name">Portrait au criterium et au stylo, inspiré d'une jackette de Dj Okawari.</span>
+												<span class="name">Convoyeur incliné à 7° que j'ai réalisé.</span>
 											</span>
 										</span>
 									</span>
 								</span>
 							</a>
 							<div id="gallery-3" class="mfp-hide">
-								<a href="images/Portfolio/Dessins/Portraits/Fille aux fleurs/001.webp"></a>
-								<a href="images/Portfolio/Dessins/Portraits/Fille aux fleurs/002.webp"></a>
+								<a href="images/Portfolio/Chaudronnerie/Convoyeurs/001-mines.webp"></a>
 							</div>	
 						</div>
 					</div>
 					
-					<!-- Fin Drawing portrait Fille aux fleurs-->
+					<!-- Fin Convoyeur Minier -->
 
 					<!-- Passage de porte -->
 
@@ -592,9 +430,49 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					
 
 					</div>
-
-					<div class="clear"></div>
 				</div>
+			</div>
+
+			<div class="section auteur" id="section-auteur">
+				<div>
+					<div class="content content-box">
+						<div class="desc">
+						  
+						  <img src="images/Items/Author.svg" alt="Auteur de Maple Leaf Press, soudeur au Québec">
+					  
+						  <h2 class="title_inner">
+							Qui se cache derrière <strong>Maple Leaf Press</strong> ?
+						  </h2>
+						  
+						  <p>
+							Je suis <strong>soudeur / chaudronnier</strong> installé au Québec. 
+							J’évolue dans des environnements industriels exigeants, notamment dans les secteurs 
+							<strong>minier</strong>, <strong>forestier</strong> et <strong>aéronautique</strong>, 
+							avec des épaisseurs importantes et de réelles contraintes de production.
+						  </p>
+						  
+						  <p>
+							<strong>Maple Leaf Press</strong> est né d’un constat simple&nbsp;: beaucoup de contenus parlent de soudure, 
+							mais peu sont <strong>structurés</strong>, <strong>honnêtes</strong> et 
+							<strong>directement applicables sur le terrain</strong>.
+						  </p>
+						  
+						  <p>
+							À travers cette plateforme et la chaîne YouTube 
+							<strong>Maple Leaf Soudure &amp; Chaudronnerie</strong>, je partage ce que j’aurais aimé trouver à mes débuts&nbsp;: 
+							des explications claires, basées sur l’expérience réelle, sans promesses irréalistes ni discours “hype”.
+						  </p>
+						  
+						  <p>
+							L’objectif n’est pas de vendre un rêve, mais de proposer un 
+							<strong>chemin sérieux</strong> pour apprendre, progresser et construire une carrière solide 
+							dans les métiers industriels.
+						  </p>
+						  
+					  
+						</div>
+					  </div>
+			</div>
 			</div>
 
 			
@@ -679,5 +557,56 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	</script>
 	<!-- Fin du bricolage -->
 
+	<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const hero = document.querySelector("#section-started");
+  const header = document.querySelector(".header");
+
+  if (!hero || !header) return;
+
+  // On active le mode "hero-only"
+  header.classList.add("hero-only");
+
+  const obs = new IntersectionObserver(
+    (entries) => {
+      const isHeroVisible = entries[0].isIntersecting;
+      header.classList.toggle("is-hidden", !isHeroVisible);
+    },
+    {
+      root: null,
+      threshold: 0.15 // ajuste: 0.10 = cache plus tôt, 0.30 = cache plus tard
+    }
+  );
+
+  obs.observe(hero);
+});
+</script>
+
+<button id="backToTop" aria-label="Retour en haut">
+	<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+	  <path d="M18 15L12 9L6 15"
+			stroke="white"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"/>
+	</svg>
+  </button>
+
+  <script>
+	const backToTopButton = document.getElementById("backToTop");
+  
+	window.addEventListener("scroll", () => {
+	  if (window.scrollY > 250) {
+		backToTopButton.classList.add("show");
+	  } else {
+		backToTopButton.classList.remove("show");
+	  }
+	});
+  
+	backToTopButton.addEventListener("click", () => {
+	  window.scrollTo({ top: 0, behavior: "smooth" });
+	});
+  </script>
+  
 </body>
 </html>
