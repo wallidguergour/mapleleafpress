@@ -1,103 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- Page d'accueil -->
+  <url>
+    <loc>https://mapleleaf.press/</loc>
+    <lastmod>2026-01-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Article 1 : Comment devenir soudeur -->
+  <url>
+    <loc>https://mapleleaf.press/comment-devenir-soudeur.html</loc>
+    <lastmod>2026-01-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Article 2 : Soudure fil fourré -->
+  <url>
+    <loc>https://mapleleaf.press/soudure-fil-fourre.html</loc>
+    <lastmod>2026-01-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Article 3 : Forge industrielle NASA -->
+  <url>
+    <loc>https://mapleleaf.press/forge-industrielle-nasa.html</loc>
+    <lastmod>2026-01-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Page guides (hub) -->
+  <url>
+    <loc>https://mapleleaf.press/guides.html</loc>
+    <lastmod>2026-01-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <sitemap>
-      <loc>
-      https://www.weldingengineer.org/annex/sitemap.xml
-      </loc>
-      <lastmod>2022-03-05</lastmod>
-   </sitemap>
-
-   <sitemap>
-      <loc>
-      https://www.weldingengineer.org/blog/sitemap.xml
-      </loc>
-      <lastmod>2022-03-05</lastmod>
-   </sitemap>
-   <sitemap>
-      <loc>
-      https://www.weldingengineer.org/blog/welding/sitemap.xml
-      </loc>
-      <lastmod>2022-03-05</lastmod>
-   </sitemap>
-   <sitemap>
-      <loc>
-      https://www.weldingengineer.org/blog/welding/sitemap-images.xml
-      </loc>
-      <lastmod>2022-05-22</lastmod>
-   </sitemap>
-   <sitemap>
-      <loc>
-      https://www.weldingengineer.org/blog/programming/sitemap.xml
-      </loc>
-      <lastmod>2022-03-05</lastmod>
-   </sitemap>
-   <sitemap>
-      <loc>
-      https://www.weldingengineer.org/blog/programming/sitemap-images.xml
-      </loc>
-      <lastmod>2022-05-22</lastmod>
-   </sitemap>
-    <sitemap>
-      <loc>
-      https://www.weldingengineer.org/blog/metallurgy/sitemap.xml
-      </loc>
-      <lastmod>2022-03-05</lastmod>
-   </sitemap>
-   <sitemap>
-      <loc>
-      https://www.weldingengineer.org/blog/metallurgy/sitemap-images.xml
-      </loc>
-      <lastmod>2022-05-22</lastmod>
-   </sitemap>
-   <sitemap>
-      <loc>
-      https://www.weldingengineer.org/blog/metallurgy/Materials/sitemap.xml
-      </loc>
-      <lastmod>2022-03-05</lastmod>
-   </sitemap>
-   <sitemap>
-      <loc>
-      https://www.weldingengineer.org/blog/metallurgy/Materials/sitemap-images.xml
-      </loc>
-      <lastmod>2022-05-22</lastmod>
-   </sitemap>
-   <sitemap>
-      <loc>
-      https://www.weldingengineer.org/blog/metallurgy/Book/sitemap.xml
-      </loc>
-      <lastmod>2022-03-05</lastmod>
-   </sitemap>
-   <sitemap>
-      <loc>
-      https://www.weldingengineer.org/blog/metallurgy/Book/sitemap-images.xml
-      </loc>
-      <lastmod>2022-05-22</lastmod>
-   </sitemap>
-   <sitemap>
-      <loc>
-      https://www.weldingengineer.org/blog/fishing/sitemap.xml
-      </loc>
-      <lastmod>2022-03-05</lastmod>
-   </sitemap>
-   <sitemap>
-      <loc>
-      https://www.weldingengineer.org/blog/fishing/sitemap-images.xml
-      </loc>
-      <lastmod>2022-05-22</lastmod>
-   </sitemap>
-   <sitemap>
-      <loc>
-      https://www.weldingengineer.org/blog/CAD/sitemap.xml
-      </loc>
-      <lastmod>2022-03-05</lastmod>
-   </sitemap>
-   <sitemap>
-      <loc>
-      https://www.weldingengineer.org/blog/CAD/sitemap-images.xml
-      </loc>
-      <lastmod>2022-05-22</lastmod>
-   </sitemap>
-
-</sitemapindex>
+</urlset>
