@@ -1,17 +1,23 @@
 [
-    {
-      "title": "Soudure Fil Fourré",
-      "description": "",
-      "url": "https://www.mapleleaf.press/guides/soudage/fil-fourre/Bases.html"
-    },
-    {
-      "title": "Devenir Soudeur en 2026",
-      "description": "",
-      "url": "https://www.mapleleaf.press/comment-devenir-soudeur.html"
-    },
-    {
-      "title": "Forge Industrielle | Nasa Net Forging",
-      "description": "",
-      "url": "https://mapleleaf.press/guides/ressources/forge-industrielle/Documentation-Nasa.html"
-    }
-  ]
+  {
+    "title": "Soudure Fil Fourré : Bases et Techniques",
+    "description": "Guide complet du soudage fil fourré (FCAW) : réglages optimaux, positions de soudage, défauts courants à éviter et techniques pour débutants et confirmés.",
+    "url": "https://mapleleaf.press/soudure-fil-fourre.html",
+    "category": "Technique",
+    "keywords": ["soudure fil fourré", "FCAW", "technique soudage", "fil fourré", "réglages soudage"]
+  },
+  {
+    "title": "Comment Devenir Soudeur en 2026 : Guide Complet",
+    "description": "Formations (CAP, Bac pro, reconversion adulte), salaire débutant à confirmé, compétences requises, débouchés et conseils terrain pour devenir soudeur en 2026.",
+    "url": "https://mapleleaf.press/comment-devenir-soudeur.html",
+    "category": "Carrière",
+    "keywords": ["devenir soudeur", "formation soudeur", "reconversion soudeur", "salaire soudeur", "CAP soudeur", "débouchés soudeur"]
+  },
+  {
+    "title": "Forge Industrielle : Documentation NASA (Net Forging)",
+    "description": "Ressources techniques NASA sur la forge industrielle et le net-shape forging pour l'aérospatiale : procédés, matériaux et applications critiques.",
+    "url": "https://mapleleaf.press/forge-industrielle-nasa.html",
+    "category": "Ressources",
+    "keywords": ["forge industrielle", "NASA", "net forging", "aérospatiale", "forgeage", "documentation technique"]
+  }
+]
