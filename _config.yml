@@ -6,9 +6,11 @@ permalink: pretty
 # Supprime l'extension .html des URLs
 plugins:
   - jekyll-redirect-from
+  - jekyll-sitemap
 
 # Exclude des fichiers inutiles
 exclude:
   - README.md
   - Gemfile
+
   - Gemfile.lock
