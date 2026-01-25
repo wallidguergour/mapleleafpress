@@ -35,7 +35,7 @@ new Vue({
 new Vue({
   el: '#vue',
   data: {
-    instagram: '',
+    instagram: 'https://www.instagram.com/mapleleafwelding/',
     pinterest: 'https://www.pinterest.com/weldingengineerorg/',
     linkedin: 'https://www.linkedin.com/company/maple-leaf-welding',
     blogArduino: '',
