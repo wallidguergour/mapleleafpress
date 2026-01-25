@@ -1,0 +1,14 @@
+# _config.yml
+
+# URLs sans .html
+permalink: pretty
+
+# Supprime l'extension .html des URLs
+plugins:
+  - jekyll-redirect-from
+
+# Exclude des fichiers inutiles
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
