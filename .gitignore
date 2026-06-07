@@ -1,0 +1,11 @@
+_site/
+.jekyll-cache/
+.jekyll-metadata
+Gemfile.lock
+.DS_Store
+.vs/
+.claude/
+AVANCEMENT.md
+cahier-des-charges-mapleleaf-press.md
+copy-soudeur-a-coup-sur-v2.md
+REFERENCE-ancienne-page.html

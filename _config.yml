@@ -1,0 +1,36 @@
+# _config.yml — mapleleaf.press
+
+# Site
+title: "Soudeur à Coup Sûr"
+tagline: "La formation qui vous prépare à l'examen de soudage — de l'intérieur"
+description: "Formation en ligne pour réussir le Titre Professionnel et les examens de qualification soudage. Préparée par un ancien membre de jury d'examen."
+author: "Maple Leaf Soudure"
+url: "https://www.mapleleaf.press"
+baseurl: ""
+lang: "fr"
+
+# Analytics
+gtm_id: "GTM-N5LJ5D59"
+
+# Jekyll
+permalink: pretty
+timezone: Europe/Paris
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+
+# Sitemap
+sitemap:
+  exclude:
+    - /404.html
+
+# Exclure du build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - "*.sh"
+  - cahier-des-charges-mapleleaf-press.md
+  - REFERENCE-ancienne-page.html
+  - README.md
+  - .vs/

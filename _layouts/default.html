@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'fr' }}">
+<head>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','{{ site.gtm_id }}');</script>
+  <!-- End Google Tag Manager -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="author" content="{{ site.author }}">
+  <meta name="theme-color" content="#E7E6E6">
+
+  <!-- SEO -->
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+
+  <!-- Canonical & hreflang -->
+  <link rel="canonical" href="{{ site.url }}{{ page.url | remove: 'index.html' }}">
+  <link rel="alternate" hreflang="fr" href="{{ site.url }}{{ page.url | remove: 'index.html' }}">
+  <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ page.url | remove: 'index.html' }}">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:title" content="{{ page.title | default: site.title }}">
+  <meta property="og:description" content="{{ page.description | default: site.description }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url | remove: 'index.html' }}">
+  <meta property="og:image" content="{{ site.url }}/images/og/soudeur-a-coup-sur.webp">
+  <meta property="og:image:alt" content="Soudeur à Coup Sûr — Formation soudage">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page.title | default: site.title }}">
+  <meta name="twitter:description" content="{{ page.description | default: site.description }}">
+  <meta name="twitter:image" content="{{ site.url }}/images/og/soudeur-a-coup-sur.webp">
+
+  <!-- JSON-LD : Organization + Product/Offer -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "{{ site.author }}",
+        "url": "{{ site.url }}"
+      },
+      {
+        "@type": "Product",
+        "name": "Soudeur à Coup Sûr",
+        "description": "{{ site.description }}",
+        "brand": {
+          "@type": "Brand",
+          "name": "{{ site.author }}"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "70",
+          "priceCurrency": "EUR",
+          "availability": "https://schema.org/InStock",
+          "url": "{{ site.url }}"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/images/favicons/favicon.ico">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/basic.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/layout.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/animate.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/fontawesome.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/solid.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/theme-colors/teal.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/custom.css">
+
+</head>
+
+<body class="grained-off {{ page.body_class | default: 'page' }}">
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.gtm_id }}"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="centrize full-width">
+      <div class="vertical-center">
+        <div class="spinner">
+          <div class="double-bounce1"></div>
+          <div class="double-bounce2"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Container -->
+  <div class="container">
+
+    <!-- Cursor -->
+    <div class="cursor-follower"></div>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="head-top">
+
+        <!-- Menu button (mobile) -->
+        <a href="#" class="menu-btn"><span></span></a>
+
+        <!-- Logo texte -->
+        <div class="logo">
+          <a href="#">Maple Leaf Soudure</a>
+        </div>
+
+        <!-- Nav réduite : un seul CTA -->
+        <div class="top-menu hover-masks">
+          <div class="top-menu-nav">
+            <div class="menu-topmenu-container">
+              <ul class="menu">
+                <li class="menu-item"><a href="#section-vsl">La formation</a></li>
+                <li class="menu-item"><a href="#section-programme">Programme</a></li>
+                <li class="menu-item"><a href="#section-cta">Accéder — 99 €</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- Wrapper -->
+    <div class="wrapper">
+
+      {{ content }}
+
+    </div><!-- /.wrapper -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="copy">
+        <p>&copy; {{ 'now' | date: "%Y" }} &mdash; Maple Leaf Soudure. Tous droits réservés.</p>
+      </div>
+    </footer>
+
+    <!-- Lines décoratives -->
+    <div class="lines">
+      <div class="line-col"></div>
+      <div class="line-col"></div>
+      <div class="line-col"></div>
+      <div class="line-col"></div>
+      <div class="line-col"></div>
+    </div>
+
+  </div><!-- /.container -->
+
+  <!-- Back to top -->
+  <button id="backToTop" aria-label="Retour en haut de page">
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M18 15L12 9L6 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+  <!-- Scripts -->
+  <script src="{{ site.baseurl }}/js/jquery.min.js"></script>
+  <script src="{{ site.baseurl }}/js/jquery.validate.js"></script>
+  <script src="{{ site.baseurl }}/js/grained.js"></script>
+  <script src="{{ site.baseurl }}/js/scripts.js"></script>
+  <script src="{{ site.baseurl }}/js/sales.js"></script>
+
+</body>
+</html>
