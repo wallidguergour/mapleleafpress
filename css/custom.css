@@ -215,6 +215,32 @@ a.btn:hover,
   color: #fff;
 }
 
+/* Boutons d'achat Gumroad — fond plein */
+a.btn[data-gumroad-overlay-checkout],
+.section.cvio-dark a.btn[data-gumroad-overlay-checkout] {
+  background: var(--teal);
+  color: #fff;
+  border-color: var(--teal);
+  border-radius: 4px;
+}
+
+a.btn[data-gumroad-overlay-checkout]:hover,
+.section.cvio-dark a.btn[data-gumroad-overlay-checkout]:hover {
+  background: #1c3f50;
+  border-color: #1c3f50;
+  color: #fff;
+}
+
+a.btn[data-gumroad-overlay-checkout]:focus-visible {
+  outline: 3px solid var(--teal);
+  outline-offset: 4px;
+}
+
+.section.cvio-dark a.btn[data-gumroad-overlay-checkout]:focus-visible {
+  outline: 3px solid rgba(255, 255, 255, 0.8);
+  outline-offset: 4px;
+}
+
 /* ================================================
    FOOTER
 ================================================ */
@@ -349,6 +375,15 @@ a.btn:hover,
 
 .cvio-price__future strong {
   color: var(--text-dark);
+}
+
+/* Prix barré — version avec remise */
+.cvio-price__original {
+  display: block;
+  font-size: 22px;
+  text-decoration: line-through;
+  opacity: 0.45;
+  margin-bottom: -4px;
 }
 
 /* Grand bouton CTA — height:auto obligatoire (border-box + height:44px du template) */
